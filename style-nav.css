@@ -1,15 +1,15 @@
-ul {
+.special-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+.special-li {
   float: left;
 }
 
-li a {
+.special-li a {
   display: block;
   padding: 8px;
   background-color: #dddddd;

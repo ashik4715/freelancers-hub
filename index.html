@@ -32,11 +32,11 @@
 
 <body>
     <div id="content">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+        <ul class="special-ul">
+            <li class="special-li"><a href="#home">Home</a></li>
+            <li class="special-li"><a href="#news">News</a></li>
+            <li class="special-li"><a href="#contact">Contact</a></li>
+            <li class="special-li"><a href="#about">About</a></li>
         </ul>
 
         <div class="container pt-5">
@@ -127,25 +127,48 @@
             <!-- division My SKILL -->
             <h1 class="pt-5">My Skill</h1>
             <div id="personal-info-row">
-            <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" >SEO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" >SEM</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" >SMM</a>
-                  </li>
-                </ul>
-              </nav>
+            <nav class="navbar navbar-expand-sm bg-secondary justify-content-center">
+                <ul class="list-group list-group-horizontal special-ul">
+                    <li class="list-group-item special-li" data-bs-toggle="collapse" data-bs-target="#seo">SEO</li>
+                    <li class="list-group-item special-li" data-bs-toggle="collapse" data-bs-target="#sem">SEM</li>
+                    <li class="list-group-item special-li" data-bs-toggle="collapse" data-bs-target="#smm">SMM</li>
+                  </ul>
+            </nav>
               
-              <div class="container-fluid mt-3">
-                <h3>Centered Navbar</h3>
-                <p>Use the .justify-content-center class to center the navigation bar.</p>
-                <p>In this example, the navbar will be centered on medium, large and extra large screens. On small screens it will be displayed vertically and left-aligned (because of the .navbar-expand-sm class).</p>
+              <div id="seo" class="collapse mt-3">
+                <ul>
+                    <li>Keyword research for organic search</li>
+                    <li>Website technical audit</li>
+                    <li>Off-site SEO campaign</li>
+                    <li>On Page Optimisation</li>
+                    <li>Link building</li>
+                    <li>Local SEO</li>
+                    <li>Competitor Research</li>
+                    <li>Backlink audit and prepare Disavow file</li>
+                </ul>
               </div>
+
+              <div id="sem" class="collapse mt-3">
+                <ul>
+                    <li>Keyword research for organic search</li>
+                    <li>Website technical audit</li>
+                    <li>Off-site SEO campaign</li>
+                    <li>On Page Optimisation</li>
+                    <li>Link building</li>
+                    <li>Local SEO</li>
+                </ul>
+              </div>
+
+              <div id="smm" class="collapse mt-3">
+                <ul>
+                    <li>Keyword research for organic search</li>
+                    <li>Website technical audit</li>
+                    <li>Off-site SEO campaign</li>
+                    <li>On Page Optimisation</li>
+                    <li>Link building</li>
+                </ul>
+              </div>
+
             </div>
             <!-- End of division My SKILL -->
 

@@ -137,3 +137,11 @@ i {
   text-align: justify;
   text-justify: inter-word;
 }
+
+.btn-space {
+  margin-right: 20px;
+  font-size: 16px;
+  font-family: "Roboto", Sans-serif;
+  color: black;
+  padding: 5px 14px;
+}
