@@ -1,5 +1,5 @@
 #personal-info-row {
-  background-color: lavender;
+  background-color: #fffaef;
 }
 
 /* [1] The container */
@@ -45,15 +45,15 @@
 }
 
 .animateToRight {
-  -webkit-transform: translate(60px);
+  -webkit-transform: translate(90px);
   /* Safari */
-  transform: translate(60px);
+  transform: translate(90px);
 }
 
 .animateToLeft {
-  -webkit-transform: translate(-60px);
+  -webkit-transform: translate(-90px);
   /* Safari */
-  transform: translate(-60px);
+  transform: translate(-90px);
 }
 
 button {
@@ -99,6 +99,9 @@ button {
   text-decoration: none;
   font-size: 16px;
   color: whitesmoke;
+  display: block;
+  margin: auto;
+  max-width: 200px;
 }
 
 i {
