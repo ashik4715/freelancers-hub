@@ -113,3 +113,24 @@ i {
   border-radius: 50%;
 }
 /* End Image Rounded CSS*/
+
+.about-paragraph {
+  font-family: "Poppins", sans-serif;
+  color: #506172;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.about-paragraph,
+.personal-paragraph {
+  font-family: "Poppins", sans-serif;
+  color: #506172;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: justify;
+  text-justify: inter-word;
+}
