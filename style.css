@@ -56,7 +56,7 @@
   transform: translate(-90px);
 }
 
-button {
+.blobs-button {
   background-color: whitesmoke;
   border: solid;
   border-radius: 30px 30px 30px 30px;

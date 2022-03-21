@@ -48,14 +48,14 @@
                     <a href="" id="cmd" class="btn download-resume">Download Resume</a>
 
                     <div class="blobs">
-                        <button id="button2">
+                        <button class="blobs-button" id="button2">
                             <a href="https://www.google.com">
                                 Email
                                 <!-- <i class="fas fa-envelope fa-fw"></i> -->
                             </a>
                         </button>
-                        <button id="button1">Contact</button>
-                        <button id="button3">
+                        <button class="blobs-button" id="button1">Contact</button>
+                        <button class="blobs-button" id="button3">
                             <a href="https://www.bing.com">
                                 Phone
                                 <!-- <i class="fas fa-phone fa-fw"></i> -->
@@ -129,46 +129,64 @@
             <div id="personal-info-row">
             <nav class="navbar navbar-expand-sm bg-secondary justify-content-center">
                 <ul class="list-group list-group-horizontal special-ul">
-                    <li class="list-group-item special-li" data-bs-toggle="collapse" data-bs-target="#seo">SEO</li>
-                    <li class="list-group-item special-li" data-bs-toggle="collapse" data-bs-target="#sem">SEM</li>
-                    <li class="list-group-item special-li" data-bs-toggle="collapse" data-bs-target="#smm">SMM</li>
-                  </ul>
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        SEO
+                    </button>
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        SEM
+                    </button>
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        SMM
+                    </button>
+                </ul>
             </nav>
-              
-              <div id="seo" class="collapse mt-3">
-                <ul>
-                    <li>Keyword research for organic search</li>
-                    <li>Website technical audit</li>
-                    <li>Off-site SEO campaign</li>
-                    <li>On Page Optimisation</li>
-                    <li>Link building</li>
-                    <li>Local SEO</li>
-                    <li>Competitor Research</li>
-                    <li>Backlink audit and prepare Disavow file</li>
-                </ul>
-              </div>
 
-              <div id="sem" class="collapse mt-3">
-                <ul>
-                    <li>Keyword research for organic search</li>
-                    <li>Website technical audit</li>
-                    <li>Off-site SEO campaign</li>
-                    <li>On Page Optimisation</li>
-                    <li>Link building</li>
-                    <li>Local SEO</li>
-                </ul>
-              </div>
-
-              <div id="smm" class="collapse mt-3">
-                <ul>
-                    <li>Keyword research for organic search</li>
-                    <li>Website technical audit</li>
-                    <li>Off-site SEO campaign</li>
-                    <li>On Page Optimisation</li>
-                    <li>Link building</li>
-                </ul>
-              </div>
-
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Keyword research for organic search</li>
+                            <li>Website technical audit</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Keyword research for organic search</li>
+                            <li>Website technical audit</li>
+                            <li>Off-site SEO campaign</li>
+                            <li>On Page Optimisation</li>
+                            <li>Link building</li>
+                            <li>Local SEO</li>
+                            <li>Competitor Research</li>
+                            <li>Backlink audit and prepare Disavow file</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Keyword research for organic search</li>
+                            <li>Website technical audit</li>
+                            <li>Off-site SEO campaign</li>
+                            <li>On Page Optimisation</li>
+                            <li>Link building</li>
+                            <li>Local SEO</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+                            
             </div>
             <!-- End of division My SKILL -->
 
