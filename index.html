@@ -22,8 +22,8 @@
     <!-- End Font-awesome cdn JS CSS -->
 
     <!-- html2canvas jsPDF  library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script> -->
     <!-- PDF JS of CDN -->
 
 <!-- Image gallery baguetteBox library -->
@@ -49,7 +49,7 @@
                     <h3 class="pt-3">Digital Marketing Manager</h3>
                     <h1 class="pt-3">Mr. Shovon Joarder</h1>
                     <p class="pt-3 personal-paragraph">Technical translation, translation of documents, legal interpreting, interpreting by conversation. Technical translation, translation ents, legal interpreting, ents interpreting.</p>
-                    <a onclick="Convert_HTML_To_PDF();" id="cmd" class="btn download-resume">Download Resume</a>
+                    <a onclick="Convert_HTML_To_PDF();" id="renderPdf" class="btn download-resume">Download Resume</a>
 
                     <div class="blobs">
                         <button class="blobs-button" id="button2">
@@ -288,5 +288,31 @@
 
 </body>
 <script src="main.js"></script>
+<script src="js/html2canvas.js"></script>
+<script src="js/jsPdf.debug.js"></script>
+
+<script type="text/javascript">
+
+    var downPdf = document.getElementById("renderPdf");
+
+    downPdf.onclick = function() {
+        html2canvas(document.body, {
+            onrendered:function(canvas) {
+
+                //Returns the image data URL, parameter: image format and clarity (0-1)
+                var pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+                //Default vertical direction, size ponits, format a4[595.28,841.89]
+                var pdf = new jsPDF('', 'pt', 'a4');
+
+                //dataUrl
+                pdf.addImage(pageData, 'JPEG', 0, 0, 595.28, 592.28/canvas.width * canvas.height );
+
+                pdf.save('content.pdf');
+
+            }
+        })
+    }
+</script>
 
 </html>
