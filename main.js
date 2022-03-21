@@ -7,11 +7,6 @@ $(function() {
     });
 });
 
-// image gallery jquery javascript
-
-// image gallery jquery javascript
-
-
 const doc = new jsPDF();
 var specialElementHandlers = {
     '#generated_pdf_div': function(element, renderer) {
@@ -23,9 +18,14 @@ $('#cmd').click(function() {
     doc.fromHTML($('#content').html(), 15, 15, {
         'width': 170,
         'elementHandlers': specialElementHandlers
-    }); 
+    });
     doc.save('resume-shovon-joarder.pdf');
 });
+
+
+// image gallery jquery javascript
+
+// image gallery jquery javascript
 
 // function Convert_HTML_To_PDF() {
 //     var elementHTML = document.getElementById('contentToPrint');
@@ -64,7 +64,7 @@ $('#cmd').click(function() {
 //           pdf.setPage(i + 1); // now we declare that we're working on that page
 //           pdf.addImage(canvasDataURL, 'PNG', 20, 40, (width * .62), (height * .62)); // add content to the page
 //         }
-        
+
 //         // Save the PDF
 //         pdf.save('document.pdf');
 //     }
