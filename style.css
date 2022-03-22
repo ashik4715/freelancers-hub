@@ -1,185 +1,188 @@
 #personal-info-row {
-    background-color: #fffaef;
+  background-color: #fffaef;
 }
-
 
 /* [1] The container */
 
 .img-hover-zoom {
-    position: center;
-    max-height: 300px;
-    /* [1.1] Set it as per your need */
-    overflow: hidden;
-    /* [1.2] Hide the overflowing of child elements */
+  position: center;
+  max-height: 300px;
+  /* [1.1] Set it as per your need */
+  overflow: hidden;
+  /* [1.2] Hide the overflowing of child elements */
 }
-
 
 /* [2] Transition property for smooth transformation of images */
 
 .img-hover-zoom img {
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
-
 
 /* [3] Finally, transforming the image when container gets hovered */
 
 .img-hover-zoom:hover img {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
-
 
 /* button hover divider feature CSS*/
 
 .hide {
-    opacity: 0;
+  opacity: 0;
 }
 
 #button3,
 #button2 {
-    -webkit-transition: -webkit-transform 1s;
-    /* Safari */
-    transition: transform 1s;
+  -webkit-transition: -webkit-transform 1s;
+  /* Safari */
+  transition: transform 1s;
 }
 
 #button1 {
-    z-index: 10;
-    -webkit-transition: opacity 1s;
-    /* Safari */
-    transition: opacity 1s;
+  z-index: 10;
+  -webkit-transition: opacity 1s;
+  /* Safari */
+  transition: opacity 1s;
 }
 
 .animateToRight {
-    -webkit-transform: translate(90px);
-    /* Safari */
-    transform: translate(90px);
+  -webkit-transform: translate(90px);
+  /* Safari */
+  transform: translate(90px);
 }
 
 .animateToLeft {
-    -webkit-transform: translate(-90px);
-    /* Safari */
-    transform: translate(-90px);
+  -webkit-transform: translate(-90px);
+  /* Safari */
+  transform: translate(-90px);
 }
 
 .blobs-button {
-    background-color: whitesmoke;
-    border: solid;
-    border-radius: 30px 30px 30px 30px;
-    color: red;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    font-family: "Roboto", Sans-serif;
-    height: 60px;
+  background-color: whitesmoke;
+  border: solid;
+  border-radius: 30px 30px 30px 30px;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  font-family: "Roboto", Sans-serif;
+  height: 60px;
 }
 
 .blobs {
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 360px;
-    height: 150px;
-    margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 360px;
+  height: 150px;
+  margin: auto;
 }
 
 .blobs:not(:last-child) {
-    border-bottom: none;
-    /* Prevent double borders */
+  border-bottom: none;
+  /* Prevent double borders */
 }
 
 .download-resume {
-    font-family: "Roboto", Sans-serif;
-    background-color: #ff000a;
-    border-radius: 30px 30px 30px 30px;
-    padding: 12px 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    color: whitesmoke;
-    display: block;
-    margin: auto;
-    max-width: 200px;
+  font-family: "Roboto", Sans-serif;
+  background-color: #ff000a;
+  border-radius: 30px 30px 30px 30px;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: whitesmoke;
+  display: block;
+  margin: auto;
+  max-width: 200px;
 }
 
 i {
-    color: red;
-    font-size: 1.9em;
+  color: red;
+  font-size: 1.9em;
 }
 
-
 /* End button hover divider feature CSS*/
-
 
 /* Image Rounded CSS*/
 
 .my-rounded-img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
-
 
 /* End Image Rounded CSS*/
 
 .about-paragraph {
-    font-family: "Poppins", sans-serif;
-    color: #506172;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 15px;
-    font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  color: #506172;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
 }
 
 .about-paragraph,
 .personal-paragraph {
-    font-family: "Poppins", sans-serif;
-    color: #506172;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: justify;
-    text-justify: inter-word;
+  font-family: "Poppins", sans-serif;
+  color: #506172;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .btn-space {
-    margin-right: 20px;
-    font-size: 16px;
-    font-family: "Roboto", Sans-serif;
-    color: black;
-    padding: 5px 14px;
+  margin-right: 20px;
+  font-size: 16px;
+  font-family: "Roboto", Sans-serif;
+  color: black;
+  padding: 5px 14px;
 }
-
 
 /* Spcial ordered list CSS */
 
 .special-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .special-li {
-    float: left;
+  float: left;
 }
 
 .special-li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
 }
-
 
 /* end special ui and ol */
 
-
-/* image modal */
-
+/* experience modal */
+.paragraph-experience {
+  font-family: "Poppins", sans-serif;
+  color: #506172;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  overflow-wrap: break-word;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
 /* end image modal */
