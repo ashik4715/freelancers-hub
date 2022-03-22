@@ -22,6 +22,17 @@ $('#cmd').click(function() {
     doc.save('resume-shovon-joarder.pdf');
 });
 
+// Button Hide of header
+
+// jQuery(function() {
+//     jQuery('.download-resume').click(function() {
+//         jQuery('.hideDiv').hide();
+//         jQuery('.targetDiv').show();
+//         $(".download-resume").hide();
+//     });
+// });
+//
+
 
 // PDF  javascript
 // var downPdf = document.getElementById("renderPdf");

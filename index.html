@@ -50,7 +50,7 @@
                     <p class="pt-3 personal-paragraph">Technical translation, translation of documents, legal interpreting, interpreting by conversation. Technical translation, translation ents, legal interpreting, ents interpreting.</p>
                     <a id="renderPdf" class="btn download-resume">Download Resume</a>
 
-                    <div class="blobs">
+                    <div class="blobs hideDiv">
                         <button class="blobs-button" id="button2">
                             <a href="https://www.google.com">
                                 Email
@@ -65,6 +65,13 @@
                             </a>
                         </button>
                     </div>
+
+                    <p class="targetDiv fs-5 pt-2 text-center" style="display: none;">
+                        <i class="fas fa-phone fa-sm"></i> +8801712 279883
+                    </p>
+                    <p class="targetDiv fs-5 pt-2 text-center" style="display: none;">
+                        <i class="fas fa-mail-bulk fa-sm"></i> info@freelancers-hub.com
+                    </p>
 
                 </div>
                 <div class="col-sm-6">
@@ -589,6 +596,11 @@
     var downPdf = document.getElementById("renderPdf");
 
     downPdf.onclick = function() {
+
+        // Button Hide of header
+        jQuery('.hideDiv').hide();
+        jQuery('.targetDiv').show();
+        $(".download-resume").hide();
 
         $('.collapse').collapse('show');
 
