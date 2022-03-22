@@ -6,10 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume Landing Page &#8211; Shovon Joarder</title>
-    <link rel='dns-prefetch' href='//s.w.org' />
-    <link rel="alternate" type="application/rss+xml" title="Shovon Joarder &raquo; Feed" href="https://joarder.com.bd/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Shovon Joarder &raquo; Comments Feed" href="https://joarder.com.bd/comments/feed/" />
-
+    
     <!-- Bootstrap 5 cdn JS CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -133,7 +130,7 @@
 
             <!-- division My SKILL -->
             <h1 class="pt-5">My Skill</h1>
-            <div id="personal-info-row">
+            <div id="accordion-skill">
                 <nav class="navbar navbar-expand-sm bg-secondary justify-content-center">
                     <ul class="list-group list-group-horizontal special-ul">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -353,14 +350,11 @@
                     <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/Shovon-Joarder.png" alt="Shovon Joarder" class="d-block w-100">
-                        </div>
+                            <iframe type="application/pdf" class="carousel-video" width="630" height="555" src="https://www.youtube.com/embed/6drfp_3823I" frameborder="0" allowfullscreen></iframe>                        </div>
                         <div class="carousel-item">
-                            <img src="image-figma/pic1.jpeg" alt="Shovon Joarder" class="d-block w-100">
-                        </div>
+                            <iframe type="application/pdf" class="carousel-video" width="630" height="555" src="https://www.youtube.com/embed/aMZ4QL0orw0" frameborder="0" allowfullscreen></iframe>                        </div>
                         <div class="carousel-item">
-                            <img src="img/seo.jpeg" alt="SEO" class="d-block w-100">
-                        </div>
+                            <iframe type="application/pdf" class="carousel-video" width="630" height="555" src="https://www.youtube.com/embed/D4i1J90oNEg" frameborder="0" allowfullscreen></iframe>                        </div>
                     </div>
 
                     <!-- Left and right controls/icons -->
@@ -395,6 +389,28 @@
             </div>
             <!--  end experience -->
 
+<!--  Education -->
+            <h1 class="pt-5">Education</h1>
+            <div class="row">
+                <div class="col-sm-6"> 
+                    <p class="fs-2 pt-3">
+                        1.  Bachelor of Business Management, Business Administration & Management
+                    </p>
+                    <p class="fs-5">Banglore University</p>
+                    <p class="fs-5">1999-2002</p>
+                    <p class="fs-5">First Class</p>
+                </div>
+                <div class="col-sm-6"> 
+                    <p class="fs-2 pt-3">
+                        2.  Higher Secondary School Certificate (H.S.C)
+                    </p>
+                    <p class="fs-5">Adamjee Cantonment Public College</p>
+                    <p class="fs-5">1997-2002</p>
+                    <p class="fs-5">First Division</p>
+                </div>
+            </div>
+<!--  end Education -->
+            
             <!-- End Main Container -->
         </div>
         <!-- End Main Content -->
@@ -409,6 +425,9 @@
     var downPdf = document.getElementById("renderPdf");
 
     downPdf.onclick = function() {
+        
+        $('.collapse').collapse('show');
+        
         var fbcanvas = document.getElementById("content");
         html2canvas($(fbcanvas),
         {
