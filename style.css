@@ -209,6 +209,10 @@ i {
 
 /* Load More */
 
+.col-md-6 {
+    display: none;
+}
+
 .load-more {
     background-color: #000;
     color: #fff !important;

@@ -7,20 +7,39 @@ $(function() {
     });
 });
 
-const doc = new jsPDF();
-var specialElementHandlers = {
-    '#generated_pdf_div': function(element, renderer) {
-        return true;
-    }
-};
+// const doc = new jsPDF();
+// var specialElementHandlers = {
+//     '#generated_pdf_div': function(element, renderer) {
+//         return true;
+//     }
+// };
 
-$('#cmd').click(function() {
-    doc.fromHTML($('#content').html(), 15, 15, {
-        'width': 170,
-        'elementHandlers': specialElementHandlers
+// $('#cmd').click(function() {
+//     doc.fromHTML($('#content').html(), 15, 15, {
+//         'width': 170,
+//         'elementHandlers': specialElementHandlers
+//     });
+//     doc.save('resume-shovon-joarder.pdf');
+// });
+
+// Load More
+$(function() {
+    $(".col-md-6").slice(0, 2).show();
+    $(".download-resume").mouseover(function() {
+        $(".col-md-6:hidden").slice(0, 20).slideDown();
     });
-    doc.save('resume-shovon-joarder.pdf');
+    $("body").on('click touchstart', '.load-more', function(e) {
+        e.preventDefault();
+        $(".col-md-6:hidden").slice(0, 20).slideDown();
+        if ($(".col-md-6:hidden").length == 0) {
+            $(".load-more").css('visibility', 'hidden');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1000);
+    });
 });
+// end Load More
 
 // Button Hide of header
 
