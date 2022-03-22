@@ -117,6 +117,13 @@ i {
   border-radius: 50%;
 }
 
+#circle-contact-icon {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #888;
+  padding: 0.2em 0.3em;
+}
+
 /* End Image Rounded CSS*/
 
 .about-paragraph {
