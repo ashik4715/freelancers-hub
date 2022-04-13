@@ -11,8 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
     <!-- End Bootstrap 5 cdn JS CSS -->
 
     <!-- Font-awesome cdn JS CSS -->
@@ -37,13 +35,19 @@
 
 <body>
     <div id="mainContent">
+        <ul class="special-ul">
+            <li class="special-li"><a href="#home">Home</a></li>
+            <li class="special-li"><a href="#news">News</a></li>
+            <li class="special-li"><a href="#contact">Contact</a></li>
+            <li class="special-li"><a href="#about">About</a></li>
+        </ul>
 
         <div class="container pt-5">
-            <div class="row">
+            <div class="row" id="personal-info-row">
                 <div class="col-sm-6">
-                    <h3 class="digital-Marketing-tag pt-1">Digital Marketing Manager</h3>
-                    <h1 class="name-title-tag pt-1">Mr. Shovon Joarder</h1>
-                    <p class="digital-Marketing-paragraph pt-1 pb-4">Technical translation, translation of documents, legal interpreting, interpreting by conversation. Technical translation, translation ents, legal interpreting, ents interpreting.</p>
+                    <h3 class="pt-3">Digital Marketing Manager</h3>
+                    <h1 class="pt-3">Mr. Shovon Joarder</h1>
+                    <p class="pt-3 personal-paragraph">Technical translation, translation of documents, legal interpreting, interpreting by conversation. Technical translation, translation ents, legal interpreting, ents interpreting.</p>
                     <a id="renderPdf" class="btn download-resume">Download Resume</a>
 
                     <div class="blobs hideDiv">
@@ -71,64 +75,62 @@
 
                 </div>
                 <div class="col-sm-6">
-                    <img src="image-figma/pic1.png" class="img-fluid my-rounded-img" alt="Shovon Joarder" max-width="500" max-height="500">
+                    <img src="image-figma/pic1.jpeg" class="img-fluid image-pulse my-rounded-img" alt="Shovon Joarder" max-width="500" max-height="500">
                 </div>
             </div>
 
-            <div class="row project-counter pb-5 pt-2">
+            <div class="row pt-5">
                 <div class="col-sm-3">
-                    <div class="card border-0 text-center" style="max-width:400px; max-height: 160px;">
+                    <div class="card text-center" style="max-width:400px; height: 130px;">
                         <div class="card-body">
-                            <img src="image-figma/heart1.png" class="img-fluid" alt="heart1">
-                            <h5 class="project-counter-numbers">256</h5>
-                            <p class="project-counter-text">Projects</p>
+                            <i class="far fa-heart fa-fw"></i>
+                            <h5 class="card-title">256</h5>
+                            <p class="card-text">Projects</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="card border-0 text-center" style="max-width:400px; max-height: 160px;">
+                    <div class="card text-center" style="max-width:400px; height: 130px;">
                         <div class="card-body">
-                            <img src="image-figma/heart2.png" class="img-fluid" alt="heart2">
-                            <h5 class="project-counter-numbers">256</h5>
-                            <p class="project-counter-text">Clients</p>
+                            <i class="fas fa-mug-hot fa-fw"></i>
+                            <h5 class="card-title">256</h5>
+                            <p class="card-text">Clients</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="card border-0 text-center" style="max-width:400px; max-height: 160px;">
+                    <div class="card text-center" style="max-width:400px; height: 130px;">
                         <div class="card-body">
-                            <img src="image-figma/heart3.png" class="img-fluid" alt="heart3">
-                            <h5 class="project-counter-numbers">2566+</h5>
-                            <p class="project-counter-text">Hours</p>
+                            <i class="fas fa-award fa-fw"></i>
+                            <h5 class="card-title">2566+</h5>
+                            <p class="card-text">Hours</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="card border-0 text-center" style="max-width:400px; max-height: 160px;">
+                    <div class="card text-center" style="max-width:400px; height: 130px;">
                         <div class="card-body">
-                            <img src="image-figma/heart4.png" class="img-fluid" alt="heart4">
-                            <h5 class="project-counter-numbers">226</h5>
-                            <p class="project-counter-text">Projects</p>
+                            <i class="fas fa-star fa-fw"></i>
+                            <h5 class="card-title">226</h5>
+                            <p class="card-text">Projects</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- About me -->
-            <div class="container pt-5 pb-5">
-                <div class="row pt-5 pb-5">
+            <div class="container pt-5">
+                <div class="row" id="personal-info-row">
                     <div class="col-sm-5">
-                        <img src="image-figma/smiling-man-holding-smartphone.jpeg" class="img-fluid" alt="Shovon Joarder" max-width="500" max-height="500">
+                        <img src="image-figma/smiling-man-holding-smartphone.jpeg" class="img-fluid image-pulse" alt="Shovon Joarder" max-width="500" max-height="500">
                     </div>
                     <div class="col-sm-7">
-                        <h1 class="about-me pt-4">About Me</h1>
-                        <p class="about-me-paragraph pt-4">
-                            With 5 years of practical experience on search engine optimization for organic search and pay-per-click advertising on Google AdWords and Facebook, now I can confidently offer complete digital marketing services to all my potential clients. I am also
+                        <h1 class="pt-4">About Me</h1>
+                        <p class="pt-4 about-paragraph">
+                            With 5 years of practical experience on search engine optimisation for organic search and pay-per-click advertising on Google AdWords and Facebook, now I can confidently offer complete digital marketing services to all my potential clients. I am also
                             a Google Certified AdWord Professional. I provide complete digital marketing services to small business & startup, e-commerce and affiliate websites.
-                            <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue leo sit amet varius tincidunt. Aenean condimentum diam enim, id consequat mi pretium placerat. Vestibulum sodales massa a nunc venenatis ultrices.
-                            Mauris ac dui vel mi facilisis.
                         </p>
-                        <img class="img-fluid pt-4" width="325px" height="110px" src="img/sign.png" alt="signature">
+                        <img class="img-fluid pt-5" width="325px" height="110px" src="img/sign.jpeg" alt="signature">
                     </div>
                 </div>
             </div>
@@ -201,7 +203,7 @@
 
             <!-- Upwork and Image Gallery -->
             <div class="container pt-5">
-                <div class="row">
+                <div class="row" id="personal-info-row">
 
                     <div class="col-sm-6">
                         <div class="img-hover-zoom pt-3">
@@ -233,42 +235,42 @@
                             <div class="d-flex flex-wrap justify-content-center">
                                 <div class="d-flex flex-column">
                                     <a href="image-figma/Design-Rush-Accredited-Badge 1.jpeg" target="_blank">
-                                        <img class="img-fluid" src="image-figma/Design-Rush-Accredited-Badge.jpeg">
+                                        <img class="img-fluid image-pulse" src="image-figma/Design-Rush-Accredited-Badge.jpeg">
                                     </a>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <a href="image-figma/google-partner-1 1.jpeg" target="_blank">
-                                        <img class="img-fluid" src="image-figma/google-partner-1.jpeg">
+                                        <img class="img-fluid image-pulse" src="image-figma/google-partner-1.jpeg">
                                     </a>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <a href="image-figma/1602140217665 2.jpeg" target="_blank">
-                                        <img class="img-fluid" src="image-figma/1602140217665.jpeg">
+                                        <img class="img-fluid image-pulse" src="image-figma/1602140217665.jpeg">
                                     </a>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <a href="image-figma/1597210071277 2.jpeg" target="_blank">
-                                        <img class="img-fluid" src="image-figma/1597210071277.jpeg">
+                                        <img class="img-fluid image-pulse" src="image-figma/1597210071277.jpeg">
                                     </a>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <a href="image-figma/1597119791299 2.jpeg" target="_blank">
-                                        <img class="img-fluid" src="image-figma/1597119791299.jpeg">
+                                        <img class="img-fluid image-pulse" src="image-figma/1597119791299.jpeg">
                                     </a>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <a href="image-figma/1596591909577 2.jpeg" target="_blank">
-                                        <img class="img-fluid" src="image-figma/1596591909577.jpeg">
+                                        <img class="img-fluid image-pulse" src="image-figma/1596591909577.jpeg">
                                     </a>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <a href="image-figma/1597231094732 2.jpeg" target="_blank">
-                                        <img class="img-fluid" src="image-figma/1597231094732.jpeg">
+                                        <img class="img-fluid image-pulse" src="image-figma/1597231094732.jpeg">
                                     </a>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <a href="image-figma/1597937028925 2.jpeg" target="_blank">
-                                        <img class="img-fluid" src="image-figma/1597937028925.jpeg">
+                                        <img class="img-fluid image-pulse" src="image-figma/1597937028925.jpeg">
                                     </a>
                                 </div>
                             </div>
@@ -287,7 +289,7 @@
             </p>
 
             <div class="container">
-                <div class="row content">
+                <div class="row content" id="personal-info-row">
 
                     <div class="col-md-6 pt-5">
                         <h2 class="pt-3">Search Engine Optimization Manager</h2>
@@ -342,7 +344,7 @@
                 </div>
 
                 <!-- Video experience section -->
-                <div class="row content">
+                <div class="row content" id="personal-info-row">
 
                     <div id="demo1" class="col-md-6 pt-5 carousel slide" data-bs-ride="carousel">
                         <!-- Indicators/dots -->
@@ -405,7 +407,7 @@
 
                 <!--  2nd experience -->
 
-                <div class="row content">
+                <div class="row content" id="personal-info-row">
 
                     <div class="col-md-6 pt-5">
                         <h2 class="pt-3">Search Engine Optimization Manager</h2>
@@ -460,7 +462,7 @@
                 </div>
 
                 <!-- Video experience section -->
-                <div class="row content">
+                <div class="row content" id="personal-info-row">
 
                     <div id="demo2" class="col-md-6 pt-5 carousel slide" data-bs-ride="carousel">
                         <!-- Indicators/dots -->
@@ -609,5 +611,43 @@
 
 </body>
 <script src="main.js"></script>
+
+<script type="text/javascript">
+    var downPdf = document.getElementById("renderPdf");
+
+    downPdf.onclick = function() {
+
+        // Button Hide of header
+        jQuery('.hideDiv').hide();
+        jQuery('.targetDiv').show();
+        $(".download-resume").hide();
+
+        $('.collapse').collapse('show');
+
+        var fbcanvas = document.getElementById("mainContent");
+        html2canvas($(fbcanvas), {
+            useCORS: true,
+            onrendered: function(canvas) {
+
+                var width = canvas.width;
+                var height = canvas.height;
+                var millimeters = {};
+                millimeters.width = Math.floor(width * 0.264583);
+                millimeters.height = Math.floor(height * 0.264583);
+
+                var imgData = canvas.toDataURL();
+
+                var imgBase64 = canvas.toDataURL();
+                var imgURL = "data:image/" + imgBase64;
+
+                var doc = new jsPDF("l", "mm", "a4");
+                doc.deletePage(1);
+                doc.addPage(millimeters.width, millimeters.height);
+                doc.addImage(imgData, 'JPEG', 0, 0);
+                doc.save('content.pdf');
+            }
+        });
+    }
+</script>
 
 </html>

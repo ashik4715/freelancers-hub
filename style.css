@@ -1,8 +1,3 @@
-#personal-info-row {
-    background-color: #fffaef;
-}
-
-
 /* [1] The container */
 
 .image-pulse {
@@ -150,16 +145,6 @@ i {
 
 /* End Image Rounded CSS*/
 
-.about-paragraph {
-    font-family: "Poppins", sans-serif;
-    color: #506172;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 15px;
-    font-weight: normal;
-}
-
-.about-paragraph,
 .personal-paragraph {
     font-family: "Poppins", sans-serif;
     color: #506172;
@@ -243,6 +228,78 @@ i {
 .load-more:hover {
     background-color: blue;
     text-decoration: none;
+}
+
+#mainContent {
+    background-color: #FFFAEF;
+}
+
+.digital-Marketing-tag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    color: #222222;
+}
+
+.name-title-tag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 80px;
+    color: #222222;
+}
+
+.digital-Marketing-paragraph {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+}
+
+.project-counter {
+    background: #FFFFFF;
+    border: 1px solid rgba(216, 174, 107, 0.2);
+}
+
+.project-counter-numbers {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 56px;
+    color: #222222;
+}
+
+.project-counter-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #818181;
+}
+
+.about-me {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 56px;
+    color: #222222;
+}
+
+.about-me-paragraph {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    color: #494949;
 }
 
 

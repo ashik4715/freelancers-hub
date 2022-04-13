@@ -25,3 +25,41 @@ $(function() {
     });
 });
 // end Load More
+
+// pdf downloader script
+var downPdf = document.getElementById("renderPdf");
+
+downPdf.onclick = function() {
+
+        // Button Hide of header
+        jQuery('.hideDiv').hide();
+        jQuery('.targetDiv').show();
+        $(".download-resume").hide();
+
+        $('.collapse').collapse('show');
+
+        var fbcanvas = document.getElementById("mainContent");
+        html2canvas($(fbcanvas), {
+            useCORS: true,
+            onrendered: function(canvas) {
+
+                var width = canvas.width;
+                var height = canvas.height;
+                var millimeters = {};
+                millimeters.width = Math.floor(width * 0.264583);
+                millimeters.height = Math.floor(height * 0.264583);
+
+                var imgData = canvas.toDataURL();
+
+                var imgBase64 = canvas.toDataURL();
+                var imgURL = "data:image/" + imgBase64;
+
+                var doc = new jsPDF("l", "mm", "a4");
+                doc.deletePage(1);
+                doc.addPage(millimeters.width, millimeters.height);
+                doc.addImage(imgData, 'JPEG', 0, 0);
+                doc.save('content.pdf');
+            }
+        });
+    }
+    // end pdf downloader script
