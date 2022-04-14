@@ -32,6 +32,10 @@ $(".nav-link").on('click', function() {
 });
 // end skill tabs hide
 
+// Image corousal
+
+// end image carousal
+
 // pdf downloader script
 var downPdf = document.getElementById("renderPdf");
 
