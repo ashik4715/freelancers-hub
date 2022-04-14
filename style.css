@@ -188,27 +188,6 @@ i {
 /* end special ui and ol */
 
 
-/* experience modal */
-
-.paragraph-experience {
-    font-family: "Poppins", sans-serif;
-    color: #506172;
-    font-size: 16px;
-    line-height: 30px;
-    margin-bottom: 15px;
-    font-weight: normal;
-    overflow-wrap: break-word;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-
-/* end image modal */
-
-
 /* Load More */
 
 .col-md-6 {
@@ -320,18 +299,20 @@ i {
 }
 
 .skill-box {
-    width: 1320px;
-    height: 490px;
+    max-width: 1320px;
     background: #FFFAEF;
     border: 1px solid #DECFAE;
     box-sizing: border-box;
 }
 
 .skill-panel {
-    width: 1320px;
-    height: 70px;
+    max-width: 1320px;
     border: 1px solid #DECFAE;
     box-sizing: border-box;
+}
+
+.skill-list-section {
+    max-height: 900px;
 }
 
 .nav-item {
@@ -417,6 +398,37 @@ li {
 
 t {
     color: #494949;
+}
+
+.upwork-photos {
+    max-width: 597px;
+    background: #FFF7EB;
+    border: 1px solid #D8AE6B;
+    box-sizing: border-box;
+}
+
+.experience-div {
+    background: #FFFFFF;
+}
+
+.experience-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 37px;
+    line-height: 56px;
+    color: #222222;
+}
+
+.experience-paragraph {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176.2%;
+    text-align: center;
+    color: #535353;
+    max-height: 56px;
 }
 
 
