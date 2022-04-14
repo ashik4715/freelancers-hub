@@ -378,6 +378,47 @@ i {
     color: #222222;
 }
 
+.upwork-hover-css {
+    filter: drop-shadow(0px 18px 19px rgba(216, 174, 107, 0.36));
+}
+
+.upwork-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 56px;
+    color: #222222;
+}
+
+.upwork-paragraph {
+    border-left: 3px solid #D31D0B;
+    background: #FFF5DC;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 170%;
+    color: #494949;
+}
+
+.upwork-h3 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    color: #222222;
+}
+
+li {
+    color: #B4853B;
+}
+
+t {
+    color: #494949;
+}
+
 
 /* override Css bootstrap */
 
