@@ -525,15 +525,6 @@ t {
     border-radius: 16px;
 }
 
-.contact-information {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 37px;
-    line-height: 56px;
-    color: #222222;
-}
-
 .contact-with-me {
     margin-top: 100px;
     font-family: 'Poppins';
@@ -544,6 +535,37 @@ t {
     color: #222222;
     text-align: center;
     align-items: center;
+}
+
+.contact-information {
+    margin-left: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 56px;
+    color: #222222;
+}
+
+.contact-name {
+    margin-top: 30px;
+    margin-left: 135px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+}
+
+.contact-text-simple {
+    margin-left: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #222222;
 }
 
 .icon-anchor {
