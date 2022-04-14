@@ -135,13 +135,6 @@ i {
     border-radius: 50%;
 }
 
-#circle-contact-icon {
-    display: inline-block;
-    border-radius: 50%;
-    box-shadow: 0 0 2px #888;
-    padding: 0.2em 0.3em;
-}
-
 
 /* End Image Rounded CSS*/
 
@@ -473,6 +466,89 @@ t {
     font-weight: 600;
     font-size: 18px;
     color: #222222;
+}
+
+.education-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 56px;
+    color: #222222;
+}
+
+.education-degree {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+}
+
+.education-school {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #222222;
+}
+
+.education-year {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #868686;
+}
+
+.education-grade {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #222222;
+}
+
+.contact-section {
+    background: white;
+}
+
+.contact-us-div {
+    max-width: 1300px;
+    background: #FFFAEF;
+    border: 1px solid #D8AE6B;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.contact-information {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 56px;
+    color: #222222;
+}
+
+.contact-with-me {
+    margin-top: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+    text-align: center;
+    align-items: center;
+}
+
+.icon-anchor {
+    color: #fff !important;
+    text-decoration: none !important;
 }
 
 
