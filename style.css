@@ -575,6 +575,61 @@ t {
     display: inline-block !important;
 }
 
+.get-touch {
+    background: #111111;
+    opacity: 0.9;
+}
+
+.send-query {
+    background: #F9C648;
+    opacity: 0.9;
+}
+
+.get-touch-hTag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 141.4%;
+    color: #FFFFFF;
+    max-width: 443px;
+    margin-top: 110px;
+}
+
+.get-touch-pTag {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 175.4%;
+    color: #FFFFFF;
+}
+
+.send-query-hTag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 110.1%;
+    color: #323232;
+    margin-left: 105px;
+}
+
+.send-query-pTag {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 175.4%;
+    color: #323232;
+    margin-left: 105px;
+}
+
+.needs-validation {
+    margin-left: 105px;
+    margin-left: 105px;
+}
+
 
 /* override Css Image Corousal */
 
