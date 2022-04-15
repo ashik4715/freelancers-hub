@@ -26,15 +26,6 @@ $(function() {
 });
 // end Load More
 
-// skill tabs hide show
-$(".nav-link").on('click', function() {
-    $('.tab-pane.show li.active').removeClass('active').addClass('hide');
-});
-// end skill tabs hide
-
-// Image corousal
-
-// end image carousal
 
 // pdf downloader script
 var downPdf = document.getElementById("renderPdf");
@@ -73,3 +64,13 @@ downPdf.onclick = function() {
         });
     }
     // end pdf downloader script
+
+
+// skill tabs hide show
+
+// end skill tabs hide
+
+
+// Image corousal
+
+// end image carousal

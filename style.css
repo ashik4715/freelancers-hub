@@ -273,39 +273,8 @@ i {
     color: #494949;
 }
 
-.skill-section {
-    background: #FFFFFF;
-    max-height: 920px;
-}
-
-.skill-title {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 37px;
-    line-height: 56px;
-    color: #222222;
-}
-
 .background1 {
     background-color: #FFFAEF;
-}
-
-.skill-box {
-    max-width: 1320px;
-    background: #FFFAEF;
-    border: 1px solid #DECFAE;
-    box-sizing: border-box;
-}
-
-.skill-panel {
-    max-width: 1320px;
-    border: 1px solid #DECFAE;
-    box-sizing: border-box;
-}
-
-.skill-list-section {
-    max-height: 900px;
 }
 
 .nav-item {
@@ -333,23 +302,6 @@ i {
 
 .nav-link:hover {
     background: #FFFFFF !important;
-}
-
-.skill-image {
-    width: 292px;
-    height: 180px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 100px;
-}
-
-.skill-tab-title {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 170%;
-    color: #222222;
 }
 
 .upwork-hover-css {
@@ -571,6 +523,56 @@ t {
 .icon-anchor {
     color: #fff !important;
     text-decoration: none !important;
+}
+
+.skill-image {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.skill-tab-title {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    color: #222222;
+}
+
+.skill-section {
+    background: #FFFFFF;
+    max-height: 920px;
+}
+
+.skill-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 56px;
+    color: #222222;
+}
+
+.skill-box {
+    max-width: 1320px;
+    background: #FFFAEF;
+    border: 1px solid #DECFAE;
+    box-sizing: border-box;
+}
+
+.skill-panel {
+    max-width: 1320px;
+    border: 1px solid #DECFAE;
+    box-sizing: border-box;
+}
+
+.skill-list-section {
+    width: 950px;
+}
+
+.inlineList ul {
+    display: inline-block !important;
 }
 
 
