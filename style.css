@@ -686,19 +686,5 @@ t {
 
 /* override Css Image Corousal */
 
-.my-carousel {
-    max-width: 532px;
-    margin: 0px auto;
-}
-
-.slick-slide {
-    margin: 10px;
-}
-
-.slick-slide img {
-    width: 100%;
-    border: 2px solid #fff;
-}
-
 
 /* end overrisde Css Image Corousal */

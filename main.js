@@ -8,14 +8,10 @@ $(function() {
 });
 
 // Load More
-$(function() {
+$(document).ready(function() {
     // slick carousal image slider
-    $('.my-carousel').slick({
-        slidesToShow: 1,
-        centerMode: true,
-    });
-    // end slick carousal image slider
 
+    // end slick carousal image slider
     $(".col-md-6").slice(0, 2).show();
     $(".download-resume").mouseover(function() {
         $(".col-md-6:hidden").slice(0, 20).slideDown();
@@ -26,9 +22,10 @@ $(function() {
         if ($(".col-md-6:hidden").length == 0) {
             $(".load-more").css('visibility', 'hidden');
         }
-        $('html,body').animate({
-            scrollTop: $(this).offset().top
-        }, 1000);
+        // animate load-more
+        // $('html,body').animate({
+        //     scrollTop: $(this).offset().top
+        // }, 1000);
     });
 });
 // end Load More
