@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <!-- End Bootstrap 5 cdn JS CSS -->
 
     <!-- Font-awesome cdn JS CSS -->
@@ -24,6 +26,7 @@
     <!-- End Font-awesome cdn JS CSS -->
 
     <!-- html2canvas jsPDF  library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/html2canvas.js"></script>
     <script src="js/jsPdf.debug.js"></script>
@@ -537,40 +540,13 @@
                 <!-- Video experience section -->
                 <div class="row content">
 
-                    <div id="demo1" class="col-md-6 pt-5 carousel slide" data-bs-ride="carousel">
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <a href="https://www.youtube.com/watch?v=xy2kRkcn-rc" target="_blank">
-                                    <img src="img/SMM.jpeg" alt="youtube3" class="d-block w-100">
-                                </a>
-                            </div>
-                            <div class="carousel-item active">
-                                <a href="https://www.youtube.com/watch?v=6drfp_3823I" target="_blank">
-                                    <img src="img/SMM.jpeg" alt="youtube4" class="d-block w-100">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://www.youtube.com/watch?v=4tiVPuLbbHg" target="_blank">
-                                    <img src="img/seo.jpeg" alt="youtube5" class="d-block w-100">
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+                    <div class="col-md-6 pt-5 my-carousel slide">
+                        <div><img src="https://picsum.photos/300/200?random=1"></div>
+                        <div><img src="img/seo.jpg" alt="seo-caro"></div>
+                        <div><img src="https://picsum.photos/300/200?random=2"></div>
+                        <div><img src="https://picsum.photos/300/200?random=3"></div>
+                        <div><img src="https://picsum.photos/300/200?random=4"></div>
+                        <div><img src="https://picsum.photos/300/200?random=5"></div>
                     </div>
 
                     <div class="col-md-6 pt-5">
@@ -869,48 +845,48 @@
         <!--  Owl Carousal -->
 
         <div class="expert_active owl-carousel">
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/Upwork_Logo.png" alt="Upwork_Logo">
                 </div>
             </div>
 
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/ahref.png" alt="ahref">
                 </div>
             </div>
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/Clutch-firms-that-deliver_Logo.png" alt="Clutch-firms-that-deliver_Logo">
                 </div>
             </div>
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/FB.png" alt="FB">
                 </div>
             </div>
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/Good-firms.png" alt="Good-firms">
                 </div>
             </div>
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/hubstaff-logo.png" alt="hubstaff_Logo">
                 </div>
             </div>
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/Google_Partner_Logo.png" alt="Google_Partner_Logo">
                 </div>
             </div>
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/semrush.png" alt="semrush">
                 </div>
             </div>
-            <div class="single_expert">
+            <div class="single_expert pt-4">
                 <div class="expert_thumb">
                     <img src="image-figma/moz.png" alt="moz">
                 </div>
