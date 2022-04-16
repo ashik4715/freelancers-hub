@@ -10,7 +10,14 @@ $(function() {
 // Load More
 $(document).ready(function() {
     // slick carousal image slider
-
+    // Slick version 1.5.8
+    $('.mycarousel').slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+        centerMode: true,
+    });
+    // Slick version 1.5.8
     // end slick carousal image slider
     $(".col-md-6").slice(0, 2).show();
     $(".download-resume").mouseover(function() {
@@ -92,23 +99,24 @@ downPdf.onclick = function() {
         html2canvas($(fbcanvas), {
             useCORS: true,
             onrendered: function(canvas) {
+                setTimeout(function() {
+                    var width = canvas.width;
+                    var height = canvas.height;
+                    var millimeters = {};
+                    millimeters.width = Math.floor(width * 0.264583);
+                    millimeters.height = Math.floor(height * 0.264583);
 
-                var width = canvas.width;
-                var height = canvas.height;
-                var millimeters = {};
-                millimeters.width = Math.floor(width * 0.264583);
-                millimeters.height = Math.floor(height * 0.264583);
+                    var imgData = canvas.toDataURL();
 
-                var imgData = canvas.toDataURL();
+                    var imgBase64 = canvas.toDataURL();
+                    var imgURL = "data:image/" + imgBase64;
 
-                var imgBase64 = canvas.toDataURL();
-                var imgURL = "data:image/" + imgBase64;
-
-                var doc = new jsPDF("l", "mm", "a4");
-                doc.deletePage(1);
-                doc.addPage(millimeters.width, millimeters.height);
-                doc.addImage(imgData, 'JPEG', 0, 0);
-                doc.save('content.pdf');
+                    var doc = new jsPDF("l", "mm", "a4");
+                    doc.deletePage(1);
+                    doc.addPage(millimeters.width, millimeters.height);
+                    doc.addImage(imgData, 'JPEG', 0, 0);
+                    doc.save('content.pdf');
+                }, 4500);
             }
         });
     }
