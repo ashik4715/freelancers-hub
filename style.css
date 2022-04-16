@@ -630,6 +630,59 @@ t {
     margin-right: 80px;
 }
 
+.footer-div {
+    background: #171715;
+}
+
+.footer-logo-section {
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.footer-paragraph {
+    margin-top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 157.1%;
+    color: #EFEFEF;
+}
+
+.footer-btn {
+    background: linear-gradient(0deg, #E92816, #E92816), #9903FF;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
+
+.input-group>.form-control {
+    background: #F9F8FF !important;
+    height: 62px !important;
+}
+
+.footerHtag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 188.2%;
+    color: #FFFFFF;
+}
+
+.footerPtag {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.4%;
+    color: #EFEFEF;
+}
+
+.footer-contact-section {
+    margin-left: 210px;
+    max-width: 300px;
+}
+
 
 /* override Css Image Corousal */
 
