@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
     // Slick version 1.5.8
     // end slick carousal image slider
-    $(".col-md-6").slice(0, 2).show();
+    $(".col-md-6").slice(0, 6).show();
     $(".download-resume").mouseover(function() {
         $(".col-md-6:hidden").slice(0, 20).slideDown();
     });

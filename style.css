@@ -686,13 +686,8 @@ t {
 
 /* override Css Image Corousal */
 
-h2 {
-    font-family: sans-serif;
-    color: #fff;
-}
-
 .mycarousel {
-    width: 40%;
+    width: 80%;
     margin: 0px auto;
 }
 
