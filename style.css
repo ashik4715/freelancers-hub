@@ -686,19 +686,13 @@ t {
 
 /* override Css Image Corousal */
 
-.wrapper {
-    width: 100%;
-    padding-top: 20px;
-    text-align: center;
-}
-
 h2 {
     font-family: sans-serif;
     color: #fff;
 }
 
 .mycarousel {
-    width: 90%;
+    width: 40%;
     margin: 0px auto;
 }
 
@@ -709,11 +703,6 @@ h2 {
 .slick-slide img {
     width: 100%;
     border: 2px solid #fff;
-}
-
-.wrapper .slick-dots li button:before {
-    font-size: 20px;
-    color: white;
 }
 
 
