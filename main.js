@@ -24,7 +24,7 @@ $(document).ready(function() {
         $(".col-md-6:hidden").slice(0, 20).slideDown();
     });
     $("body").on('click touchstart', '.load-more', function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         $(".col-md-6:hidden").slice(0, 20).slideDown();
         if ($(".col-md-6:hidden").length == 0) {
             $(".load-more").css('visibility', 'hidden');
@@ -62,10 +62,10 @@ $(document).ready(function() {
 
 // Owl Carousal
 $(document).ready(function() {
-    $(".owl-carousel").owlCarousel();
+    $(".footer-owl-carousel").owlCarousel();
 });
 
-$('.owl-carousel').owlCarousel({
+$('.footer-owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
@@ -87,6 +87,13 @@ $('.owl-carousel').owlCarousel({
             loop: false
         }
     }
+});
+
+var owl = $(".video-owl-carousel");
+owl.owlCarousel({
+    items: 1,
+    loop: true,
+    video: true,
 });
 // END Owl Carousal
 
