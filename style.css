@@ -803,5 +803,16 @@ t {
     cursor: default;
 }
 
+#carousel2 img {
+    display: block;
+    opacity: .5;
+    cursor: pointer;
+}
+
+#carousel2 .flex-active-slide img {
+    opacity: 1;
+    cursor: default;
+}
+
 
 /* end overrisde Css Image Corousal */

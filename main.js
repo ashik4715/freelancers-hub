@@ -142,6 +142,24 @@ $(document).ready(function() {
         slideshow: false,
         sync: "#carousel"
     });
+
+    $('#carousel2').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider2'
+    });
+
+    $('#slider2').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel2"
+    });
 });
 
 // END flexslider Carousal
