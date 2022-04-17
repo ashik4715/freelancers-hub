@@ -91,9 +91,10 @@ $('.footer-owl-carousel').owlCarousel({
 
 var owl = $(".owl-carousel");
 owl.owlCarousel({
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
+    items: 1,
+    // autoplay: true,
+    // autoplayTimeout: 5000,
+    // autoplayHoverPause: true,
     loop: true,
     margin: 50,
     responsiveClass: true,
@@ -151,7 +152,7 @@ downPdf.onclick = function() {
             useCORS: true,
             onrendered: function(canvas) {
                 setTimeout(function() {
-                    var width = 2160;
+                    var width = canvas.width;
                     var height = canvas.height;
                     var millimeters = {};
                     millimeters.width = Math.floor(width * 0.264583);
