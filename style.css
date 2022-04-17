@@ -684,21 +684,7 @@ t {
 }
 
 
-/* override Css Image Corousal */
-
-.mycarousel {
-    width: 80%;
-    margin: 0px auto;
-}
-
-.slick-slide {
-    margin: 10px;
-}
-
-.slick-slide img {
-    width: 100%;
-    border: 2px solid #fff;
-}
+/* Custom Image Corousal */
 
 
 /* Owl Carousel */
@@ -801,6 +787,20 @@ t {
 .item a:hover i {
     display: block;
     z-index: 2;
+}
+
+
+/* others Corousal */
+
+#carousel img {
+    display: block;
+    opacity: .5;
+    cursor: pointer;
+}
+
+#carousel .flex-active-slide img {
+    opacity: 1;
+    cursor: default;
 }
 
 

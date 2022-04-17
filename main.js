@@ -9,16 +9,7 @@ $(function() {
 
 // Load More
 $(document).ready(function() {
-    // slick carousal image slider
-    // Slick version 1.5.8
-    $('.mycarousel').slick({
-        slidesToShow: 1,
-        dots: false,
-        arrows: false,
-        centerMode: true,
-    });
-    // Slick version 1.5.8
-    // end slick carousal image slider
+
     $(".col-md-6").slice(0, 6).show();
     $(".download-resume").mouseover(function() {
         $(".col-md-6:hidden").slice(0, 20).slideDown();
@@ -92,11 +83,11 @@ $('.footer-owl-carousel').owlCarousel({
 var owl = $(".owl-carousel");
 owl.owlCarousel({
     items: 1,
-    // autoplay: true,
-    // autoplayTimeout: 5000,
-    // autoplayHoverPause: true,
+    autoplay: true,
+    autoplayTimeout: 15000,
+    autoplayHoverPause: true,
     loop: true,
-    margin: 50,
+    margin: 30,
     responsiveClass: true,
     nav: true,
     loop: true,
@@ -130,10 +121,30 @@ $('.item').magnificPopup({
     delegate: 'a',
 });
 
-// popup
+// flexslider Carousal
 
-// end popup
-// END Owl Carousal
+$(document).ready(function() {
+    // The slider being synced must be initialized first
+    $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider'
+    });
+
+    $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel"
+    });
+});
+
+// END flexslider Carousal
 
 // pdf downloader script
 var downPdf = document.getElementById("renderPdf");
