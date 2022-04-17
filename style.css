@@ -700,117 +700,107 @@ t {
     border: 2px solid #fff;
 }
 
-.owl-carousel .owl-video-tn {
-    background-size: cover;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-}
 
-.owl-video-frame {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
+/* Owl Carousel */
 
-.owl-video-frame iframe {
+.owl-prev {
+    background: url('https://res.cloudinary.com/milairagny/image/upload/v1487938188/left-arrow_rlxamy.png') left center no-repeat;
+    height: 54px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 100%;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    display: inline-block;
-}
-
-.owl-dot span {
-    width: 11px;
-    height: 11px;
-    background-color: #ccc;
-    border-radius: 50%;
-    display: block;
-    margin: 5px 3px;
-}
-
-.owl-dot.active span {
-    background-color: #000;
-}
-
-.gallery-slider_wrapper {
-    width: 100%;
-    max-width: 768px;
-    margin: auto;
-}
-
-.gallery-slider_wrapper .owl-theme .owl-nav {
-    margin: 0;
-}
-
-.gallery-slider_wrapper .owl-theme .owl-nav [class*=owl-] {
-    width: 30px;
-    height: 120px;
-    background: #ffb808;
-    font-size: 20px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-}
-
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-prev:before,
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-next:before {
-    font-family: 'LineAwesome';
-    position: absolute;
-    line-height: 120px;
-    width: 30px;
-    text-align: center;
-    top: 0;
-    left: 0;
-}
-
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-prev:before {
-    content: "\f111";
-}
-
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-prev {
-    position: absolute;
-    top: 0;
-    left: -25px;
-}
-
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-next:before {
-    content: "\f112";
-}
-
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-next {
-    position: absolute;
-    top: 0;
-    right: -24px;
-}
-
-.gallery-slider_wrapper .owl-theme .owl-nav [class*=owl-]:hover {
-    background: #202020;
-    color: #fff;
-}
-
-.gallery-slider_wrapper .single-gallery-carousel-thumbnail-box .item {
-    position: relative;
-    margin: 0 5px;
-    height: 120px;
-}
-
-.gallery-slider_wrapper .single-gallery-carousel-thumbnail-box .item img {
-    height: 100%;
+    top: 50%;
+    width: 27px;
+    z-index: 1000;
+    left: 2%;
     cursor: pointer;
+    color: transparent;
+    margin-top: -27px;
+}
+
+.owl-next {
+    background: url('https://res.cloudinary.com/milairagny/image/upload/v1487938220/right-arrow_zwe9sf.png') right center no-repeat;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    z-index: 1000;
+    right: 2%;
+    cursor: pointer;
+    color: transparent;
+    margin-top: -27px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    opacity: 0.5;
+}
+
+
+/* Owl Carousel */
+
+
+/* Popup Text */
+
+.white-popup-block {
+    background: #FFF;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.popuptext {
+    display: table;
+}
+
+.popuptext p {
+    margin-bottom: 10px;
+}
+
+.popuptext span {
+    font-weight: bold;
+    float: right;
+}
+
+
+/* Popup Text */
+
+
+/* Icon CSS */
+
+.item {
+    position: relative;
+}
+
+.item i {
+    display: none;
+    font-size: 4rem;
+    color: #FFF;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.item a {
+    display: block;
+    width: 100%;
+}
+
+.item a:hover:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.item a:hover i {
+    display: block;
+    z-index: 2;
 }
 
 
