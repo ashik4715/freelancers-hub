@@ -11,8 +11,14 @@ $(function() {
 $(document).ready(function() {
 
     $(".col-md-6").slice(0, 6).show();
-    $(".download-resume").mouseover(function() {
+    $(".download-resume").mouseover(function(e) {
         $(".col-md-6:hidden").slice(0, 20).slideDown();
+        
+        $('.nav-link').tab('show')
+        $('#home:not(.active)').addClass('active');
+        $('#profile:not(.active)').addClass('active');
+        $('#contact:not(.active)').addClass('active');
+        // e.preventDefault();
     });
     $("body").on('click touchstart', '.load-more', function(e) {
         // e.preventDefault();
@@ -167,7 +173,7 @@ $(document).ready(function() {
 // pdf downloader script
 var downPdf = document.getElementById("renderPdf");
 
-downPdf.onclick = function() {
+    downPdf.onclick = function() {
 
         // Button Hide of header
         jQuery('.hideDiv').hide();
@@ -180,24 +186,23 @@ downPdf.onclick = function() {
         html2canvas($(fbcanvas), {
             useCORS: true,
             onrendered: function(canvas) {
-                setTimeout(function() {
-                    var width = canvas.width;
-                    var height = canvas.height;
-                    var millimeters = {};
-                    millimeters.width = Math.floor(width * 0.264583);
-                    millimeters.height = Math.floor(height * 0.264583);
 
-                    var imgData = canvas.toDataURL();
+                var width = canvas.width;
+                var height = canvas.height;
+                var millimeters = {};
+                millimeters.width = Math.floor(width * 0.264583);
+                millimeters.height = Math.floor(height * 0.264583);
 
-                    var imgBase64 = canvas.toDataURL();
-                    var imgURL = "data:image/" + imgBase64;
+                var imgData = canvas.toDataURL();
 
-                    var doc = new jsPDF("l", "mm", "a4");
-                    doc.deletePage(1);
-                    doc.addPage(millimeters.width, millimeters.height);
-                    doc.addImage(imgData, 'JPEG', 0, 0);
-                    doc.save('content.pdf');
-                }, 3500);
+                var imgBase64 = canvas.toDataURL();
+                var imgURL = "data:image/" + imgBase64;
+
+                var doc = new jsPDF("l", "mm", "a4");
+                doc.deletePage(1);
+                doc.addPage(millimeters.width, millimeters.height);
+                doc.addImage(imgData, 'JPEG', 0, 0);
+                doc.save('content.pdf');
             }
         });
     }
